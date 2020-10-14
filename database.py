@@ -45,7 +45,6 @@ class RubiksDatabase:
     def _readFile(self):
         try:
             self._data: pd.DataFrame = pd.read_csv(self.dbFileURL)
-
         except:
             print("database.py: Error reading the db file: " + self.dbFileURL)
 
